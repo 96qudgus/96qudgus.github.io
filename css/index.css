@@ -22,36 +22,19 @@ html, body {
   /* background-color: #FDF4F5; */
 }
 
-.hide {
-  display: none;
-  opacity: 0;
-  transition: 1s;
+.hide { display: none; }
+h1 { font-size: 50px; }
+h2 { font-size: 40px; }
+p { font-size: 20px; }
+a, a:hover, a:active, a:visited { color: var(--font-color); }
 
-}
-
-h1 {
-  font-size: 50px;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-p {
-  font-size: 20px;
-}
-
-a, a:hover, a:active, a:visited {
-  color: var(--font-color);
-}
-
-/* common css */
+/* // common css */
 /* FullPage CSS Custom */
 .container .fp-controlArrow.fp-prev {
   border: 0;
   width: 18px;
   height: 42px;
-  background: url(/workspace/assets/img/btn_left.png) center center no-repeat;
+  background: url(/img/index_img/btn_left.png) center center no-repeat;
   background-size: contain;
   left: 0;
 }
@@ -60,7 +43,7 @@ a, a:hover, a:active, a:visited {
   border: 0;
   width: 18px;
   height: 42px;
-  background: url(/workspace/assets/img/btn_right.png) center center no-repeat;
+  background: url(/img/index_img/btn_right.png) center center no-repeat;
   background-size: contain;
   right: 0;
 }
