@@ -7,6 +7,8 @@ html, body {
 /* common css */
 :root {
  --screenPadding: 100px;
+ --font-color: #100202;
+ --background-color: #FBF5EF;
 }
 
 * {
@@ -14,7 +16,7 @@ html, body {
   margin: 0;
   list-style: none;
   text-decoration: none;
-  color: #100202;
+  color: var(--font-color);
   font-family: 'Jua', sans-serif;
   word-break: keep-all;
   /* background-color: #FDF4F5; */
@@ -40,7 +42,7 @@ p {
 }
 
 a, a:hover, a:active, a:visited {
-  color: #100202;
+  color: var(--font-color);
 }
 
 /* common css */
