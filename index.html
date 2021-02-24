@@ -67,10 +67,12 @@
           <div>
             <h2>인적사항</h2>
             <p>이름 : 박병현</p>
-            <p>나이 : 26세 (1996.02.06 출생)</p>
+            <p>나이 : 만 25세 (1996.02.06 출생)</p>
             <p>대림대학교 졸업</p>
             <p>이젠IT아카데미 'JAVA 웹&앱 개발자' 과정 수료</p>
             <p>(주)비스톤스 계약직 6개월 (웹 퍼블리셔)</p>
+            <a href="temp01.html">temp01</a>
+            <a href="temp02.html">temp02</a>
           </div>
         </div>
       </div>
@@ -84,8 +86,8 @@
 
           </div>
           <h2>HTML5</h2>
-          <p>웹 표준성과 시멘틱 웹을 고려하는 코딩</p>
-          <p>최신 태그인 header, section, article, aside 등을 이용한 깔끔한 코딩</p>
+          <p><span class="blink">웹 표준성</span>과 <span class="blink">시멘틱 웹</span>을 고려하는 코딩</p>
+          <p>최신 태그인 <span class="blink">header, section, article, aside</span> 등을 이용한 깔끔한 코딩</p>
         </div>
         <div class="skill skill02">
           <div class="img_box">
@@ -93,18 +95,18 @@
           </div>
           <h2>CSS3</h2>
           <p>다양한 CSS 속성을 사용한 디자인</p>
-          <p>display: flex;를 이용한 영역 배치</p>
-          <p>@media 키워드를 이용한 반응형 웹</p>
+          <p>display: <span class="blink">flex</span>;를 이용한 영역 배치</p>
+          <p><span class="blink">@media</span> 키워드를 이용한 반응형 웹</p>
           <p>크로스 브라우징을 위한 코딩</p>
-          <p>간편한 CSS 코딩을 위한 Bootstrap</p>
+          <p>간편한 CSS 코딩을 위한 <span class="blink">Bootstrap</span></p>
         </div>
         <div class="skill skill03">
           <div class="img_box">
             
           </div>
           <h2>JS(JQuery)</h2>
-          <p>동적인 웹사이트 구현을 위한 JS</p>
-          <p>다양한 애니메이션 효과를 위한 jQuery</p>
+          <p><span class="blink">동적인</span> 웹사이트 구현을 위한 JS</p>
+          <p>다양한 애니메이션 효과를 위한 <span class="blink">jQuery</span></p>
         </div>
         <div class="skill skill04">
           <div class="img_box">
@@ -119,7 +121,7 @@
             
           </div>
           <h2>JAVA</h2>
-          <p>데이터 입출력에 필요한 form태그, submit 타입의 button 태그를 개발환경에 맞게 사용</p>
+          <p>데이터 입출력에 필요한 <span class="blink">form태그, submit타입의 button 태그</span>를 개발환경에 맞게 사용</p>
           <p>개발자의 시선에서 바라본 코딩 가능</p>
           <p>개발자와의 의사소통이 원활</p>
         </div>
@@ -257,7 +259,12 @@
       });
     });
     //methods
-	  $.fn.fullpage.setAllowScrolling(false);
+	  // $.fn.fullpage.setAllowScrolling(false);
+    var height = $(window).scrollTop() / $(window).height();
+    console.log(height);
+    $(document).scroll(function() {
+      console.log(height);
+    });
   </script>
   <!-- // script -->
 </body>
