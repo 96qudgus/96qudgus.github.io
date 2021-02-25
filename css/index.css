@@ -31,7 +31,7 @@ a, a:hover, a:active, a:visited {
   color:#100202; /* IE */
   color: var(--font-color); 
 }
-button { background-color: rgba(0, 0, 0, 0); border-radius: 10px; }
+button { background-color: rgba(0, 0, 0, 0); border-radius: 10px; cursor: pointer; }
 /* 깜빡이게 하는 애니메이션 */
 .blink { 
   -webkit-animation:blink 1s ease-in-out infinite alternate;
