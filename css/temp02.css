@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
   padding: 100px;
   height: 100vh;
@@ -32,6 +36,7 @@ header .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
+  animation: slideLeft 0.5s ease-in-out forwards;
 }
 
 header .toggle {
@@ -44,6 +49,9 @@ header .toggle {
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10000;
+  opacity: 0;
+  animation: slideRight 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 
 header .toggle.active {
@@ -78,6 +86,13 @@ header .toggle.active {
   margin: 0 20px;
   font-weight: 600;
   display: inline-block;
+  opacity: 0;
+}
+
+.navigation.active li a {
+  opacity: 0;
+  animation: slideRight 0.5s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .container {
@@ -107,6 +122,9 @@ header .toggle.active {
   width: 100%;
   height: 100%;
   transition: 0.5s;
+  opacity: 0;
+  animation: slideRight 0.5s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .container .box .imgBx.active {
@@ -163,8 +181,44 @@ header .toggle.active {
   font-weight: 500;
   margin-right: 20px;
   display: inline-block;
+  opacity: 0;
+  animation: slideLeft 0.5s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .footer .sci li:last-child a {
   margin-right: 0;
+}
+
+.copyrightText {
+  color: #111;
+  font-weight: 500;
+  opacity: 0;
+  animation: slideRight 0.5s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+/* Now, i'll add animation in this web page */
+@keyframes slideRight {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
