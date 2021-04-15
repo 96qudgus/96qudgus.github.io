@@ -187,7 +187,10 @@ header nav .nav_wrap .coding_menu:hover .hide li {
   color: #ddd;
 }
 
-.container .section01 .section01_wrap .text a {
+.container .section01 .section01_wrap .text a,
+.container .section01 .section01_wrap .text a:active,
+.container .section01 .section01_wrap .text a:visited,
+.container .section01 .section01_wrap .text a:hover {
   color: #ddd;
 }
   /* // section01 */
