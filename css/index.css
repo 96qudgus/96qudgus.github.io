@@ -186,6 +186,10 @@ header nav .nav_wrap .coding_menu:hover .hide li {
 .container .section01 .section01_wrap .text p {
   color: #ddd;
 }
+
+.container .section01 .section01_wrap .text a {
+  color: #ddd;
+}
   /* // section01 */
   /* section02(skill_list) */
 
