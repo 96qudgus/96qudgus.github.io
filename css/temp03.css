@@ -37,7 +37,7 @@ header .banner {
   /* img 태그의 size를 지정해주는 속성 */
   /* img태그의 size는 object-fit을 사용하여 조정하고, background의 img는 background-size를 통해 조정한다. */
   object-fit: cover;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 header.sticky .banner {

@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+.hide { display: none; }
+
+* {
+  font-family: 'Jua', sans-serif;
+  word-break: keep-all;
+}
