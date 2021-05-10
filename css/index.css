@@ -39,7 +39,7 @@ header.sticky .banner {
 header .headline {
   position: absolute;
   top: 150px;
-  left: calc(50% - 100px);
+  left: calc(50% - 28.5714vw);
   z-index: 1;
   transition: 1s;
 }
@@ -50,8 +50,13 @@ header.sticky .headline {
   left: 100px;
 }
 
+header .headline .logo {
+  font-size: 3vw;
+}
+
 header .headline .subLogo {
   transition: 0.5s;
+  font-size: 3vw;
 }
 
 header.sticky .headline .subLogo {
@@ -64,11 +69,6 @@ header .navigation {
   top: 50%;
   left: 50%;
   transition: 0.5s;
-}
-
-header.sticky .introduce {
-  opacity: 0;
-  visibility: hidden;
 }
 
 header .navigation {
@@ -105,12 +105,17 @@ header .introduce {
   visibility: visible;
 }
 
+header.sticky .introduce {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* navigation opacity */
 header .introduce::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 41.4286vh;
   bottom: 0;
   background: #fff;
   z-index: 2;
@@ -129,5 +134,54 @@ header.sticky .introduce {
 header .introduce ul {
   position: relative;
   display: flex;
+  width: 100%;
+  padding: 11.6667vw;
+  justify-content: space-around;
+}
+
+header .introduce ul li {
+  text-align: center;
+  position: relative;
+  top: 7.1429vw;
+  width: 12.5vw;
+  height: 14.2857vw;
+  margin: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+  box-shadow: 0 5px 45px rgba(141, 107, 107, 0.1);
+  overflow: hidden;
+  transition: top 0.5s, z-index 0s, transform 0.5s;
+  transition-delay: 0.2s, 0.2s, 0s;
+}
+
+header .introduce ul li:hover {
+  transition-delay: 0s, 0.2s, 0.2s;
+  top: -50px;
+  transform: translateY(150px);
+  z-index: 2;
+}
+
+/* hover animation */
+header .introduce ul li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(450px);
+  transition: 0.5s;
+}
+
+header .introduce ul li:hover:before {
+  transform: skewX(45deg) translateX(-450px);
+}
+/* // hover animation */
+header .introduce ul li h2 {
+  margin: 1vw 0;
 }
 /* // design in navigation */
