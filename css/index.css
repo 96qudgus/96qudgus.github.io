@@ -140,6 +140,7 @@ header .introduce ul {
 }
 
 header .introduce ul li {
+  font-size: 1vw;
   text-align: center;
   position: relative;
   top: 7.1429vw;
