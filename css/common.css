@@ -6,3 +6,9 @@
   font-family: 'Jua', sans-serif;
   word-break: keep-all;
 }
+
+main {
+  background: #fbe9e7;
+  width: 100%;
+  min-height: 300vh;
+}
