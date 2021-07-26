@@ -1,320 +1,85 @@
 @charset 'utf-8';
-body {
-  min-height: 1000px;
-  background: #fbe9e7;
-}
+
+.hide { display: none; }
 
 * {
-  color: white;
+  font-family: 'Jua', sans-serif;
+  word-break: keep-all;
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: loading_event_none 3s;
+  min-height: 1000px;
+}
+
+.loading {
+  visibility: hidden;
+  height: 100vh;
+  background: url('/img/index_img/ttobagi.jpg') center center no-repeat;
+  background-size: cover;
+  animation: loading_screen 3s;
 }
 
 header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  transition: 0.8s;
-  z-index: 1;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.9s;
+  animation: loading_main 3.6s;
 }
 
-/* navigation design */
 header.sticky {
-  height: 80px;
+  height: 100px;
 }
 
-header .banner {
+header img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  transition: 0.9s;
 }
 
-header.sticky .banner {
-  opacity: 0.5;
+header.sticky img {
+  opacity: 0.3;
 }
 
-header .headline {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 28.5714vw);
-  z-index: 1;
-  transition: 1s;
-}
-
-header.sticky .headline {
-  position: absolute;
-  top: 25px;
-  left: 100px;
-}
-
-header .headline .logo {
-  font-size: 3vw;
-}
-
-header .headline .subLogo {
-  transition: 0.5s;
-  font-size: 3vw;
-}
-
-header.sticky .headline .subLogo {
-  opacity: 0;
-  visibility: hidden;
-}
-
-header .navigation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: 0.5s;
-}
-
-header .navigation {
+header .logo {
   position: relative;
-  display: flex;
+  top: 0;
+  left: 45%;
   z-index: 1;
+  transition: 0.9s;
+  font-size: 50px;
+  color: #03a4ed;
 }
 
-header .navigation ul {
-  position: relative;
-  display: flex;
-  transition: 0.25s;
-  transform: translateX(100px);
-  opacity: 0;
+header.sticky .logo {
+  left: 0;
+  /* transform: translateX(-50%); */
+  font-size: 30px;
+  font-weight: bold;
 }
 
-header.sticky .navigation ul {
-  transform: translateX(0);
-  opacity: 1;
-  transition-delay: 0.75s;
-  visibility: visible;
-}
-/* // navigation design */
-/* design in navigation */
-header .introduce {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
+header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  transition: 0.5s;
-  visibility: visible;
-}
-
-header.sticky .introduce {
   opacity: 0;
   visibility: hidden;
 }
 
-/* navigation opacity */
-header .introduce::before {
-  content: '';
-  position: absolute;
-  width: 100vw;
-  height: 41.4286vh;
-  bottom: 0;
-  background: #fff;
-  z-index: 2;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-}
-/* // navigation opacity */
-
-header.sticky .introduce {
-  z-index: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-header .introduce ul {
-  position: relative;
-  display: flex;
-  width: 100%;
-  padding: 11.6667vw;
-  justify-content: space-around;
-}
-
-header .introduce ul li {
-  font-size: 1vw;
-  text-align: center;
-  position: relative;
-  top: 7.1429vw;
-  width: 12.5vw;
-  height: 14.2857vw;
-  margin: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
-  z-index: 1;
-  box-shadow: 0 5px 45px rgba(141, 107, 107, 0.1);
-  overflow: hidden;
-  transition: top 0.5s, z-index 0s, transform 0.5s;
-  transition-delay: 0.2s, 0.2s, 0s;
-}
-
-header .introduce ul li:hover {
-  transition-delay: 0s, 0.2s, 0.2s;
-  top: -50px;
-  transform: translateY(150px);
-  z-index: 2;
-}
-
-/* hover animation */
-header .introduce ul li:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  transform: skewX(45deg) translateX(450px);
-  transition: 0.5s;
-}
-
-header .introduce ul li:hover:before {
-  transform: skewX(45deg) translateX(-450px);
-}
-/* // hover animation */
-header .introduce ul li h2 {
-  margin: 1vw 0;
-}
-/* // design in navigation */
-/* main */
-main .space {
-  height: 50vh;
-}
-
-  /* skill */
-main .skillWrap > h2 {
-  width: 100%;
-  text-align: center;
-}
-
-main .skillWrap .card {
-  position: relative;
-  width: 30%;
-  height: 400px;
-  margin: 30px 0;
-  background: #fff;
-  transform-style: preserve-3d;
-  transform: perspective(1920px);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: 1s;
-}
-
-main .skillWrap .card.cardRight {
-  left: 70%;
-}
-
-main .skillWrap .card.cardLeft:hover {
-  transform: translateX(100%);
-}
-
-main .skillWrap .card .imgBox {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transform-origin: left;
-  transform-style: preserve-3d;
-  background: #252525;
-  transition: 1s;
-}
-
-main .skillWrap .card:hover .imgBox {
-  transform: rotateY(-180deg);
-}
-
-main .skillWrap .card .imgBox img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
-
-main .skillWrap .card .imgBox img:nth-child(2) {
-  transform: rotateY(180deg);
-}
-
-main .skillWrap .card .detail {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* padding: 20px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main .skillWrap .card .detail .content h2 + p {
-  color: #252525;
-}
-  /* // skill */
-  /* page */
-main .pageWrap {
-  /* display: flex; */
-  /* justify-content: space-around;
-  align-items: center; */
-  width: 100%;
-  height: 150vh;
-  margin: 50px 0;
-}
-
-main .pageWrap .page {
-  display: inline-block;
-  position: relative;
-  width: 40%;
-  height: 360px;
-  margin: 20px;
-  transition: 0.5s;
-  border: 1px solid #000;
-  background-color: #000;
-}
-
-main .pageWrap .page .content {
-  position: relative;
-  width: 50%;
-  left: 20%;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-main .pageWrap .page:hover .content {
+header.sticky nav ul {
   opacity: 1;
-  z-index: 2;
+  visibility: visible;
+  /* transform: translateX(0px); */
+  transition: 1.5s ease-in-out;
 }
-
-main .pageWrap .page img {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* height: 300px; */
-  transition: 0.5s;
-}
-
-main .pageWrap .page:hover img {
-  opacity: 0.5;
-}
-  /* // page */
-/* // main */
-/* footer */
-footer {
-  width: 100%;
-  text-align: center;
-}
-/* // footer */

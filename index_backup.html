@@ -5,270 +5,214 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>박병현의 포트폴리오</title>
-  <link rel="stylesheet" href="/css/jquery.fullpage.min.css"/>
-  <link rel="stylesheet" href="/css/index_backup.css"/>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/common.css"/>
+  <link rel="stylesheet" href="/css/index.css"/>
+  <!-- // CSS -->
   <!-- font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet/">
   <!-- // font -->
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/8ac012635f.js" crossorigin="anonymous"></script>
   <!-- // Font awesome -->
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png"/>
-  <!-- //favicon -->
+  <!-- // favicon -->
 </head>
 <body>
   <!-- header -->
   <header>
-    <nav>
-      <!-- left -->
-      <a href="" class="logo"><i class="fas fa-laptop-code"></i>PortFolio</a>
-      <!-- // left -->
-      <!-- right -->
-      <ul class="nav_wrap">
-        <li>자기소개</li>
-        <li class="skill_menu">
-          <span>나의 기술<i class="fas fa-sort-down"></i></span>
-          <ul class="hide">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>JAVA</li>
-          </ul>
+    <img src="/img/temp03/pexels-rendy-maulana-yusup-2728753.jpg" class="banner" alt="banner"/>
+    <section class="headline">
+      <!-- navigation logo -->
+      <a href="#" class="logo">PARK'S</a>
+      <!-- // navigaton logo -->
+      <span class="subLogo">&nbsp;WORLD에 오신 것을 환영합니다!</span>
+    </section>
+    <!-- navigation design -->
+    <section class="introduce">
+      <ul>
+        <li>
+          <h2>인적사항</h2>
+          <p>
+            이름 : 박병현<br/>
+            나이 : 만 25세(1996년)
+          </p>
         </li>
-        <li class="coding_menu">
-          <span>코딩 사이트<i class="fas fa-sort-down"></i></span>
-          <ul class="hide">
-            <li>연습 코딩</li>
-            <li>실무 코딩</li>
-          </ul>
+        <li>
+          <h2>학력</h2>
+          <p>
+            대림대학교 세무회계과 졸업
+          </p>
+        </li>
+        <li>
+          <h2>경력</h2>
+          <p>
+            EZENIT 자바 웹&앱 개발자 과정 수료<br/>
+            (주)비스톤스 웹퍼블리셔 6개월 계약직
+          </p>
+        </li>
+        <li>
+          <h2>특이사항</h2>
+          <p>
+            성격이 밝음<br/>
+            웃음이 많음<br/>
+            언제나 열심히
+          </p>
         </li>
       </ul>
-      <!-- // right -->
+    </section>
+    <!-- // navigation design -->
+    <div class="toggle"></div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skill</a></li>
+        <li><a href="#">WebSite</a></li>
+      </ul>
     </nav>
   </header>
   <!-- // header -->
   <!-- main -->
-  <main class="container">
-    <!-- page01 -->
-    <section class="section section01">
-      <div class="section01_wrap">
-        <!-- <div class="video">
-          <video data-autoplay muted loop>
-            <source src="/img/index_img/Alone - 46637.mp4" type="video/mp4">
-          </video>
-        </div> -->
-        <div class="text">
-          <div>
-            <h1>박병현의 포트폴리오 입니다.</h1>
-            <p>다양한 언어를 공부하며 사이트 제작을 위한 준비를 마쳤습니다.</p>
-          </div>
-          <div>
-            <h2>인적사항</h2>
-            <p>이름 : 박병현</p>
-            <p>나이 : 만 25세 (1996.02.06 출생)</p>
-            <p>대림대학교 졸업</p>
-            <p>이젠IT아카데미 'JAVA 웹&앱 개발자' 과정 수료</p>
-            <p>(주)비스톤스 계약직 6개월 (웹 퍼블리셔)</p>
-            <a href="temp01.html">temp01</a>
-            <a href="temp02.html">temp02</a>
-            <a href="temp03.html">temp03</a>
-            <a href="temp04.html">temp04</a>
-            <a href="temp05.html">temp05</a>
+  <main>
+    <div class="space"></div>
+    <!-- skill section -->
+    <section class="skillWrap">
+      <h2>My Skill</h2>
+      <!-- html -->
+      <div class="card cardLeft">
+        <div class="imgBox">
+          <img src="/img/index_img/html_logo.png" alt="HTML">
+        </div>
+        <div class="detail">
+          <div class="content">
+            <h2>HTML</h2>
+            <p>
+              용도에 맞는 태그 사용<br/>
+              가독성이 높은 코드
+            </p>
           </div>
         </div>
+      </div>
+      <!-- // html -->
+      <!-- css -->
+      <div class="card cardRight">
+        <div class="imgBox">
+          <img src="/img/index_img/css_logo.png" alt="HTML">
+        </div>
+        <div class="detail">
+          <div class="content">
+            <h2>CSS</h2>
+            <p>
+              다양한 CSS 코드<br/>
+              다양한 애니메이션<br/>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- // css -->
+      <!-- js -->
+      <div class="card cardLeft">
+        <div class="imgBox">
+          <img src="/img/index_img/js_logo.png" alt="HTML">
+        </div>
+        <div class="detail">
+          <div class="content">
+            <h2>JS</h2>
+            <p>
+              다양한 라이브러리 사용을 위한 기초 JS기술 습득
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- // js -->
+      <!-- java -->
+      <div class="card cardRight">
+        <div class="imgBox">
+          <img src="/img/index_img/java_logo.png" alt="HTML">
+        </div>
+        <div class="detail">
+          <div class="content">
+            <h2>JAVA</h2>
+            <p>
+              데이터 입출력을 위한 Java Spring Framework사용<br/>
+              MySQL을 사용한 데이터베이스 구축
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- // java -->
+    </section>
+    <!-- // skill section -->
+    <!-- page section -->
+    <section class="pageWrap">
+      <!-- 또바기 -->
+      <div class="page">
+        <div class="content">
+          <h2>또바기</h2>
+          <p>훈련기관에서 제작해 본 의류쇼핑몰</p>
+          <button type="button">Read More</button>
+        </div>
+        <img src="/img/index_img/ttobagi.jpg" alt="또바기">
+      </div>
+      <!-- // 또바기 -->
+      <!-- coinFor -->
+      <div class="page">
+        <div class="content">
+          <h2>코인포</h2>
+          <p>가상화폐거래소</p>
+          <button type="button">Read More</button>
+        </div>
+        <img src="/img/index_img/coinfor.jpg" alt="코인포">
+      </div>
+      <!-- // coinFor -->
+      <!-- ahnlab -->
+      <div class="page">
+        <div class="content">
+          <h2>안랩</h2>
+          <p>보안프로그램 판매 사이트</p>
+          <button type="button">Read More</button>
+        </div>
+        <img src="/img/index_img/ahnlab.jpg" alt="안랩">
+      </div>
+      <!-- // ahnLab -->
+      <!-- samsung -->
+      <div class="page">
+        <div class="content">
+          <h2>삼성</h2>
+          <p>삼성전자 글로벌 웹사이트 제작</p>
+          <button type="button">Read More</button>
+        </div>
+        <img src="/img/index_img/samsung.jpg" alt="삼성">
+      </div>
+      <!-- // samsung -->
+    </section>
+    <!-- modal -->
+    <section class="modal">
+      <div class="popup01">
+        <span>안녕하세요</span>
       </div>
     </section>
-    <!-- // page01 -->
-    <!-- page02 -->
-    <section class="section section02">
-      <div class="section02_wrap">
-        <div class="skill skill01">
-          <div class="img_box">
-
-          </div>
-          <h2>HTML5</h2>
-          <p><span class="blink">웹 표준성</span>과 <span class="blink">시멘틱 웹</span>을 고려하는 코딩</p>
-          <p>최신 태그인 <span class="blink">header, section, article, aside</span> 등을 이용한 깔끔한 코딩</p>
-        </div>
-        <div class="skill skill02">
-          <div class="img_box">
-            
-          </div>
-          <h2>CSS3</h2>
-          <p>다양한 CSS 속성을 사용한 디자인</p>
-          <p>display: <span class="blink">flex</span>;를 이용한 영역 배치</p>
-          <p><span class="blink">@media</span> 키워드를 이용한 반응형 웹</p>
-          <p>크로스 브라우징을 위한 코딩</p>
-          <p>간편한 CSS 코딩을 위한 <span class="blink">Bootstrap</span></p>
-        </div>
-        <div class="skill skill03">
-          <div class="img_box">
-            
-          </div>
-          <h2>JS(JQuery)</h2>
-          <p><span class="blink">동적인</span> 웹사이트 구현을 위한 JS</p>
-          <p>다양한 애니메이션 효과를 위한 <span class="blink">jQuery</span></p>
-        </div>
-        <div class="skill skill04">
-          <div class="img_box">
-            
-          </div>  
-          <h2>PhotoShop</h2>
-          <p>포토샵으로 디자인한 웹을 px 수치화해서 정확하게 코딩</p>
-          <p>다양한 이미지 편집</p>
-        </div>
-        <div class="skill skill05">
-          <div class="img_box">
-            
-          </div>
-          <h2>JAVA</h2>
-          <p>데이터 입출력에 필요한 <span class="blink">form태그, submit타입의 button 태그</span>를 개발환경에 맞게 사용</p>
-          <p>개발자의 시선에서 바라본 코딩 가능</p>
-          <p>개발자와의 의사소통이 원활</p>
-        </div>
-      </div>
-    </section>
-    <!-- // page02 -->
-    <!-- page03 -->
-    <section class="section section03">
-      <div class="slide">HTML,CSS</div>
-      <!-- HTML -->
-      <div class="slide">
-        <h2>HTML</h2>
-        <p>용도가 분명한 Tag 사용,웹 접근성을 고려</p>
-      </div>
-      <!-- CSS -->
-      <div class="slide">
-        <h2>CSS</h2>
-        <p>root 키워드를 통한 통일성 있는 코딩,@media 키워드를 통한 해상도 맞춤</p>
-      </div>
-      <div class="slide">
-        <h2>CSS</h2>
-        <p>를 이용한 CSS 애니메이션 구현,글자와 테투리에 Gradient</p>
-      </div>
-      <div class="slide">
-        <h2>CSS</h2>
-        <p>BootStrap을 통한 쉽고 빠른 코딩</p>
-      </div>
-    </section>
-    <!-- // page03 -->
-    <!-- page04 -->
-    <section class="section section04">
-      <div class="slide">JS,JAVA</div>
-      <!-- JS -->
-      <div class="slide">
-        <h2>JS</h2>
-        <p>기초 JS를 튼튼히 하여 JS의 라이브러리를 빠르게 습득</p>
-      </div>
-      <div class="slide">
-        <h2>JS</h2>
-        <p>jQuery를 통한 이벤트 구현</p>
-      </div>
-      <!-- JAVA -->
-      <div class="slide">
-        <h2>JAVA</h2>
-        <p>직접 쇼핑몰 제작을 통한 JAVA 및 Spring Framework 기술 습득</p>
-      </div>
-      <div class="slide">
-        <h2>JAVA</h2>
-        <p>session과 cookie를 통한 팝업</p>
-      </div>
-      <div class="slide">
-        <h2>JAVA</h2>
-        <p>DBMS에서 데이터를 불러오는 SQL문 작성</p>
-      </div>
-    </section>
-    <!-- // page04 -->
-    <!-- page05 -->
-    <section class="section section05">
-      <div class="slide">연습 코딩과 실무 코딩</div>
-      <div class="slide">
-        <!-- practice coding -->
-        <h2>연습 코딩</h2>
-        <div class="slide_wrap">
-          <div>
-            <h3>또바기</h3>
-            <p>훈련기관에서 제작한 남녀의류 쇼핑몰</p>
-            <p class="tag">#JAVA #JS #모바일</p>
-            <button>자세히 알아보기</button>
-          </div>
-          <div>
-            <h3>삼성</h3>
-            <p>입사 후 테스트를 위한 과제</p>
-            <p class="tag">#반응형 #JQUERY #SLICK</p>
-            <button>자세히 알아보기</button>
-          </div>
-          <div>
-            <h3>클론코딩 3</h3>
-            <p>클론코딩 사이트 간략정보</p>
-            <button>자세히 알아보기</button>
-          </div>
-          <div>
-            <h3>클론코딩 4</h3>
-            <p>클론코딩 사이트 간략정보</p>
-            <button>자세히 알아보기</button>
-          </div>
-          <div>
-            <h3>클론코딩 5</h3>
-            <p>클론코딩 사이트 간략정보</p>
-            <button>자세히 알아보기</button>
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <!-- task coding -->
-        <h2>실무 코딩</h2>
-        <div class="slide_wrap">
-          <div>
-            <h3>안랩(SMB플레이스)</h3>
-            <p>안랩 사이트의 유지, 보수가 주 업무였으며, 특히 모바일 부분의 요청이 많았습니다.</p>
-            <button>자세히 알아보기</button>
-          </div>
-          <div>
-            <h3>코인포(가상화폐거래소)</h3>
-            <p>코인포 사이트의 페이지 제작이 주 업무였으며, 모바일 페이지를 담당했습니다.</p>
-            <button>자세히 알아보기</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- // page05 -->
+    <!-- // modal -->
+    <!-- // page section -->
   </main>
   <!-- // main -->
   <!-- footer -->
-  <footer></footer>
+  <footer>
+    <address>서울특별시 구로구</address>
+    <br/>
+    <span>본 웹사이트는 취업을 위한 포트폴리어이며, 상업적 용도가 없음을 알립니다.</span>
+  </footer>
   <!-- // footer -->
-  <!-- script -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <!-- <script src="/js/jquery.fullpage.min.js"></script> -->
-  <!-- <script>
-    $(document).ready(function() {
-      // FullPage
-      $('#fullpage').fullpage({
-        // 스크롤 할 때마다 section 단위로 넘어감
-        autoScrolling: true,
-        // slide
-        scrollHorizontally: true,
-        // 우측에 section navigation
-        navigation: true,
-        // 하단에 slide navigation
-        slidesNavigation: true,
-        // fullPage가 적용되는 최소 width
-        responsiveWidth: 768,
-        // 첫 번째 슬라이드와 마지막 슬라이드에는 화살표가 한 개씩
-        loopHorizontal: false
-      });
+  <script>
+    // navigation animation
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
     });
-    //methods
-	  // $.fn.fullpage.setAllowScrolling(false);
-    var height = $(window).scrollTop() / $(window).height();
-    console.log(height);
-    $(document).scroll(function() {
-      console.log(height);
-    });
-  </script> -->
-  <!-- // script -->
+    // // navigation animation
+  </script>
 </body>
 </html>

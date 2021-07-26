@@ -7,8 +7,8 @@
   <title>박병현의 포트폴리오</title>
   <!-- CSS -->
   <link rel="stylesheet" href="/css/reset.css"/>
-  <link rel="stylesheet" href="/css/common.css"/>
   <link rel="stylesheet" href="/css/index.css"/>
+  <link rel="stylesheet" href="/css/keyframes.css"/>
   <!-- // CSS -->
   <!-- font -->
   <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -22,190 +22,36 @@
   <!-- // favicon -->
 </head>
 <body>
+  <div class="loading">
+  </div>
   <!-- header -->
   <header>
-    <img src="/img/temp03/pexels-rendy-maulana-yusup-2728753.jpg" class="banner" alt="banner"/>
-    <section class="headline">
-      <!-- navigation logo -->
-      <a href="#" class="logo">PARK'S</a>
-      <!-- // navigaton logo -->
-      <span class="subLogo">&nbsp;WORLD에 오신 것을 환영합니다!</span>
-    </section>
-    <!-- navigation design -->
-    <section class="introduce">
-      <ul>
-        <li>
-          <h2>인적사항</h2>
-          <p>
-            이름 : 박병현<br/>
-            나이 : 만 25세(1996년)
-          </p>
-        </li>
-        <li>
-          <h2>학력</h2>
-          <p>
-            대림대학교 세무회계과 졸업
-          </p>
-        </li>
-        <li>
-          <h2>경력</h2>
-          <p>
-            EZENIT 자바 웹&앱 개발자 과정 수료<br/>
-            (주)비스톤스 웹퍼블리셔 6개월 계약직
-          </p>
-        </li>
-        <li>
-          <h2>특이사항</h2>
-          <p>
-            성격이 밝음<br/>
-            웃음이 많음<br/>
-            언제나 열심히
-          </p>
-        </li>
-      </ul>
-    </section>
-    <!-- // navigation design -->
+    <img src="/img/index_img/wake_up.jpg" alt="wake_up"/>
+    <a href="#" class="logo">PARK'S</a>
     <div class="toggle"></div>
-    <nav class="navigation">
+    <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skill</a></li>
-        <li><a href="#">WebSite</a></li>
+        <li>Home</li>
+        <li>Skill</li>
+        <li>Website</li>
       </ul>
     </nav>
   </header>
   <!-- // header -->
   <!-- main -->
-  <main>
-    <div class="space"></div>
-    <!-- skill section -->
-    <section class="skillWrap">
-      <h2>My Skill</h2>
-      <!-- html -->
-      <div class="card cardLeft">
-        <div class="imgBox">
-          <img src="/img/index_img/html_logo.png" alt="HTML">
-        </div>
-        <div class="detail">
-          <div class="content">
-            <h2>HTML</h2>
-            <p>
-              용도에 맞는 태그 사용<br/>
-              가독성이 높은 코드
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- // html -->
-      <!-- css -->
-      <div class="card cardRight">
-        <div class="imgBox">
-          <img src="/img/index_img/css_logo.png" alt="HTML">
-        </div>
-        <div class="detail">
-          <div class="content">
-            <h2>CSS</h2>
-            <p>
-              다양한 CSS 코드<br/>
-              다양한 애니메이션<br/>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- // css -->
-      <!-- js -->
-      <div class="card cardLeft">
-        <div class="imgBox">
-          <img src="/img/index_img/js_logo.png" alt="HTML">
-        </div>
-        <div class="detail">
-          <div class="content">
-            <h2>JS</h2>
-            <p>
-              다양한 라이브러리 사용을 위한 기초 JS기술 습득
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- // js -->
-      <!-- java -->
-      <div class="card cardRight">
-        <div class="imgBox">
-          <img src="/img/index_img/java_logo.png" alt="HTML">
-        </div>
-        <div class="detail">
-          <div class="content">
-            <h2>JAVA</h2>
-            <p>
-              데이터 입출력을 위한 Java Spring Framework사용<br/>
-              MySQL을 사용한 데이터베이스 구축
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- // java -->
-    </section>
-    <!-- // skill section -->
-    <!-- page section -->
-    <section class="pageWrap">
-      <!-- 또바기 -->
-      <div class="page">
-        <div class="content">
-          <h2>또바기</h2>
-          <p>훈련기관에서 제작해 본 의류쇼핑몰</p>
-          <button type="button">Read More</button>
-        </div>
-        <img src="/img/index_img/ttobagi.jpg" alt="또바기">
-      </div>
-      <!-- // 또바기 -->
-      <!-- coinFor -->
-      <div class="page">
-        <div class="content">
-          <h2>코인포</h2>
-          <p>가상화폐거래소</p>
-          <button type="button">Read More</button>
-        </div>
-        <img src="/img/index_img/coinfor.jpg" alt="코인포">
-      </div>
-      <!-- // coinFor -->
-      <!-- ahnlab -->
-      <div class="page">
-        <div class="content">
-          <h2>안랩</h2>
-          <p>보안프로그램 판매 사이트</p>
-          <button type="button">Read More</button>
-        </div>
-        <img src="/img/index_img/ahnlab.jpg" alt="안랩">
-      </div>
-      <!-- // ahnLab -->
-      <!-- samsung -->
-      <div class="page">
-        <div class="content">
-          <h2>삼성</h2>
-          <p>삼성전자 글로벌 웹사이트 제작</p>
-          <button type="button">Read More</button>
-        </div>
-        <img src="/img/index_img/samsung.jpg" alt="삼성">
-      </div>
-      <!-- // samsung -->
-    </section>
-    <!-- // page section -->
-  </main>
+  <main></main>
   <!-- // main -->
   <!-- footer -->
-  <footer>
-    <address>서울특별시 구로구</address>
-    <br/>
-    <span>본 웹사이트는 취업을 위한 포트폴리어이며, 상업적 용도가 없음을 알립니다.</span>
-  </footer>
+  <footer></footer>
   <!-- // footer -->
+  <!-- script -->
   <script>
-    // navigation animation
-    window.addEventListener("scroll", function() {
+    // 스크롤이 가장 상단으로 올라갈 경우, navigation bar에 변화가 생김
+    window.addEventListener('scroll', function() {
       const header = document.querySelector('header');
       header.classList.toggle('sticky', window.scrollY > 0);
     });
-    // // navigation animation
   </script>
+  <!-- // script -->
 </body>
 </html>
