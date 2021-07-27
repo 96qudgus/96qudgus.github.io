@@ -1,6 +1,8 @@
 @charset 'utf-8';
 
 .hide { display: none; }
+.blue { color: #03a4ed; }
+.red { color: #fe3f40; }
 
 * {
   font-family: 'Jua', sans-serif;
@@ -15,11 +17,14 @@ body {
 
 .loading {
   visibility: hidden;
+  width: 100%;
   height: 100vh;
   background: url('/img/index_img/ttobagi.jpg') center center no-repeat;
   background-size: cover;
   animation: loading_screen 3s;
 }
+
+/* header */
 
 header {
   position: fixed;
@@ -30,6 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
   transition: 0.9s;
   animation: loading_main 3.6s;
 }
@@ -83,3 +89,26 @@ header.sticky nav ul {
   /* transform: translateX(0px); */
   transition: 1.5s ease-in-out;
 }
+
+/* // header */
+/* main */
+
+main .wrap01 {
+  position: absolute;
+  top: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+main .wrap01 img {
+  width: 30%;
+  transform: rotate(-25deg);
+  border: 10px solid #03a4ed;
+  border-bottom: 30px solid #03a4ed;
+  /* position: relative;
+  bottom: 200px; */
+  /* opacity: 0.9; */
+  transition: 1s;
+}
+
+/* // main */
