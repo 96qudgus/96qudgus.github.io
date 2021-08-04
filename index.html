@@ -5,16 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>박병현의 포트폴리오</title>
-  <!-- CSS -->
+  <!-- css -->
   <link rel="stylesheet" href="/css/reset.css"/>
   <link rel="stylesheet" href="/css/index.css"/>
+    <!-- responsive css -->
+  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="/css/index_pc.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 769px)" href="/css/index_tablet.css"/>
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/index_mobile.css"/>
+    <!-- // responsive css -->
+    <!-- keyframes -->
   <link rel="stylesheet" href="/css/keyframes.css"/>
-  <!-- // CSS -->
+    <!-- // keyframes -->
+  <!-- // css -->
   <!-- font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet/">
-  <!-- // font -->
-  <!-- Font awesome -->
+  <style>@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');</style><!-- Font awesome -->
   <script src="https://kit.fontawesome.com/8ac012635f.js" crossorigin="anonymous"></script>
   <!-- // Font awesome -->
   <!-- favicon -->
@@ -29,6 +33,7 @@
   <header>
     <img src="/img/index_img/wake_up.jpg" alt="wake_up"/>
     <a href="#" class="logo">PARK'S</a>
+    <p>아래로 살짝 스크롤 해보세요!</p>
     <div class="toggle"></div>
     <nav>
       <ul>
@@ -89,9 +94,24 @@
         <h2>PARK'S SKILL</h2>
         <p>비록 경력이 적더라도 최선의 결과물로 보답하겠습니다.</p>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS & JQUERY</li>
+          <li>
+            <h3>HTML</h3>
+            <span>90%</span>
+            <div class="full_bar"></div>
+            <div class="sub_bar html_bar"></div>
+          </li>
+          <li>
+            <h3>CSS</h3>
+            <span>90%</span>
+            <div class="full_bar"></div>
+            <div class="sub_bar css_bar"></div>
+          </li>
+          <li>
+            <h3>JS & JQUERY</h3>
+            <span>80%</span>
+            <div class="full_bar"></div>
+            <div class="sub_bar js_bar"></div>
+          </li>
         </ul>
       </div>
     </section>
