@@ -20,6 +20,30 @@
   }
 }
 
+@keyframes loading_animate {
+  0% {
+    transform: scale(0);
+  }
+
+  10% {
+    transform: scale(1.2);
+  }
+
+  80%, 100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(370deg);
+  }
+}
+
 @keyframes loading_event_none {
   0% {
     overflow: hidden;
