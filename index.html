@@ -9,16 +9,18 @@
   <link rel="stylesheet" href="/css/reset.css"/>
   <link rel="stylesheet" href="/css/index.css"/>
     <!-- responsive css -->
-  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="/css/index_pc.css"/>
   <link rel="stylesheet" media="screen and (min-width: 769px)" href="/css/index_tablet.css"/>
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/index_mobile.css"/>
     <!-- // responsive css -->
     <!-- keyframes -->
   <link rel="stylesheet" href="/css/keyframes.css"/>
     <!-- // keyframes -->
+    <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- // AOS Library -->
   <!-- // css -->
   <!-- font -->
-  <style>@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');</style><!-- Font awesome -->
+  <style>@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');</style>
   <!-- // font -->
   <!-- // font awesome -->
   <script src="https://kit.fontawesome.com/8ac012635f.js" crossorigin="anonymous"></script>
@@ -28,15 +30,6 @@
   <!-- // favicon -->
 </head>
 <body>
-  <!-- PC에서만 보이는 Loading Screen -->
-  <div class="loading">
-    <!-- <img src="/img/index_img/ttobagi.jpg" alt=""> -->
-    <div class="loader">
-      <span style="--i:1;"></span><span style="--i:2;"></span><span style="--i:3;"></span><span style="--i:4;"></span><span style="--i:5;"></span><span style="--i:6;"></span><span style="--i:7;"></span><span style="--i:8;"></span><span style="--i:9;"></span><span style="--i:10;"></span><span style="--i:11;"></span><span style="--i:12;"></span><span style="--i:13;"></span><span style="--i:14;"></span><span style="--i:15;"></span><span style="--i:16;"></span><span style="--i:17;"></span><span style="--i:18;"></span><span style="--i:19;"></span><span style="--i:20;"></span>
-      <div class="plane"></div>
-    </div>
-  </div>
-  <!-- // Loading Screen -->
   <!-- header -->
   <header>
     <img src="/img/index_img/wake_up.jpg" alt="wake_up"/>
@@ -66,8 +59,8 @@
     <!-- // wrap01 -->
     <!-- wrap02 -->
     <section class="wrap02">
-      <img src="/img/index_img/lunch.jpg" alt="lunch" class="img_shadow">
-      <div class="wrap02_content">
+      <img src="/img/index_img/lunch.jpg" alt="lunch" class="img_shadow" data-aos="fade-right" data-aos-duration="1000">
+      <div class="wrap02_content" data-aos="fade-left" data-aos-duration="1000">
         <div class="intro_card">
           <h3>이름</h3>
           <p>박병현(만 25세)</p>
@@ -97,8 +90,8 @@
     <!-- // wrap02 -->
     <!-- wrap03 -->
     <section class="wrap03">
-      <img src="/img/index_img/night_work.jpg" alt="night_work" class="img_shadow">
-      <div class="wrap03_content">
+      <img src="/img/index_img/night_work.jpg" alt="night_work" class="img_shadow" data-aos="fade-right" data-aos-duration="1000">
+      <div class="wrap03_content" data-aos="fade-left" data-aos-duration="1000">
         <h2>PARK'S SKILL</h2>
         <p>비록 경력이 적더라도 최선의 결과물로 보답하겠습니다.</p>
         <ul>
@@ -126,23 +119,13 @@
     <!-- // wrap03 -->
     <!-- wrap04 -->
     <section class="wrap04">
-      <h2>나의 웹퍼블리셔 3하원칙!</h2>
-      <div class="wrap04_content">
-        <div class="story_card">왜(WHY) 했는가?</div>
-        <div class="story_card">무엇을(WHAT) 했는가?</div>
-        <div class="story_card">어떻게(HOW) 할껀가?</div>
-      </div>
-    </section>
-    <!-- // wrap04 -->
-    <!-- wrap05 -->
-    <section class="wrap05">
-      <h2>내가 만든 사이트들!</h2>
-      <div class="wrap05_content">
+      <h2>대표 웹사이트</h2>
+      <div class="wrap04_content" data-aos="fade-in" data-aos-duration="1000">
         <div class="main_site">
           <img src="/img/index_img/ttobagi_2.jpg" alt="또바기">
           <div class="main_content">
             <h3>또바기</h3>
-            <p>훈련 기관에서 제작한 의류쇼핑몰 제작사이트입니다. 총 4명이 제작에 참여했습니다.</p>            </p>
+            <p>훈련 기관에서 제작한 의류쇼핑몰 제작사이트입니다. 총 4명이 제작에 참여했습니다.</p>
           </div>
           <button type="button">Read More</button>
         </div>
@@ -157,19 +140,25 @@
         </div>
       </div>
     </section>
-    <!-- // wrap05 -->
+    <!-- // wrap04 -->
+    <!-- 잡다한 기술(temp.html)과 클론코딩한 사이트들을 진열해놓을 예정 -->
   </main>
   <!-- // main -->
   <!-- footer -->
   <footer></footer>
   <!-- // footer -->
   <!-- script -->
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- // AOS Library -->
   <script>
     // 스크롤이 가장 상단으로 올라갈 경우, navigation bar에 변화가 생김
     window.addEventListener('scroll', function() {
       const header = document.querySelector('header');
       header.classList.toggle('sticky', window.scrollY > 0);
     });
+    // AOS Library 초기화
+    AOS.init();
   </script>
   <!-- // script -->
 </body>
