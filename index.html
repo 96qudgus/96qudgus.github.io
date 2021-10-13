@@ -61,27 +61,29 @@
       <div class="wrap02_content" data-aos="fade-left" data-aos-duration="1000">
         <div class="intro">
           <h3>이름</h3>
-          <p>박병현(만 25세)</p>
+          <ul>
+            <li>박병현(만 25세)</li>
+          </ul>
         </div>
         <div class="intro">
           <h3>학력</h3>
-          <p>대림대학교 세무회계과 졸업</p>
+          <ul>
+            <li>대림대학교 세무회계과 졸업</li>
+          </ul>
         </div>
         <div class="intro">
           <h3>경력</h3>
-          <p>
-            이젠IT아카데미학원 'JAVA 웹&앱 개발자'과정 수료
-            <br/>
-            (주)비스톤스 웹퍼블리셔 6개월 계약직 (2020.09.~2021.03.)
-          </p>
+          <ul>
+            <li>이젠IT아카데미학원 'JAVA 웹&앱 개발자'과정 수료</li>
+            <li>(주)비스톤스 웹퍼블리셔 6개월 계약직 (2020.09.~2021.03.)</li>
+          </ul>
         </div>
         <div class="intro">
           <h3>특징</h3>
-          <p>
-            매사 긍정적
-            <br/>
-            최선을 다함
-          </p>
+          <ul>
+            <li>매사 긍정적</li>
+            <li>최선을 다함</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -123,18 +125,41 @@
           <img src="/img/index_img/ttobagi_2.jpg" alt="또바기">
           <div class="main_content">
             <h3>또바기</h3>
-            <p>훈련 기관에서 제작한 의류쇼핑몰 제작사이트입니다. 총 4명이 제작에 참여했습니다.</p>
+            <p>
+              훈련 기관에서 제작한 의류쇼핑몰 사이트입니다.
+              <br/>총 4명이 제작에 참여했습니다.
+            </p>
           </div>
           <button type="button">Read More</button>
         </div>
         <div class="sub_site">
           <div class="site_card">
             <h3>삼성전자</h3>
-            <p>근무초기에 많은 시간을 투자했던 프로젝트입니다. 다양한 국가의 홈페이지를 제작했습니다.</p>
+            <p>
+              근무초기에 많은 시간을 투자했던 프로젝트입니다.<br/>
+              다양한 국가의 홈페이지를 제작했습니다.
+            </p>
+            <button type="button">Read More</button>
             <img src="/img/index_img/samsung.jpg" alt="samsung">
           </div>
-          <div class="site_card">코인포</div>
-          <div class="site_card">안랩SMP</div>
+          <div class="site_card">
+            <h3>코인포</h3>
+            <p>
+              근무 말기에 투입됐던 프로젝트입니다.<br/>
+              주로 모바일페이지를 담당했습니다.
+            </p>
+            <button type="button">Read More</button>
+            <img src="/img/index_img/coinfor.jpg" alt="coinfor">
+          </div>
+          <div class="site_card">
+            <h3>안랩ahnlabSMP</h3>
+            <p>
+              퍼블리싱 주요 담당업무였습니다.<br/>
+              유지, 보수를 담당했습니다.
+            </p>
+            <button type="button">Read More</button>
+            <img src="/img/index_img/ahnlab.jpg" alt="ahnlabSMP">
+          </div>
         </div>
       </div>
     </section>
@@ -202,7 +227,7 @@
             <div class="imgBx">
               <img src="/img/index_img/temp07.JPG" alt="temp01">
             </div>
-            <h3>Popup Width Blur</h3>
+            <h3>Popup With Blur</h3>
             <p>카드를 클릭하면, 팝업창이 뜸과 동시에 바탕이 블러처리 된다.</p>
           </a>
         </div>
@@ -239,18 +264,44 @@
   </main>
   <!-- // main -->
   <!-- footer -->
-  <footer></footer>
+  <footer>
+    <div class="waveBox">
+      <div class="wave" id="wave1" style="--i:1;"></div>
+      <div class="wave" id="wave2" style="--i:2;"></div>
+      <div class="wave" id="wave3" style="--i:3;"></div>
+      <div class="wave" id="wave4" style="--i:4;"></div>
+    </div>
+    <div class="inner">
+      <!-- temp11(waveFooter) -->
+    </div>
+  </footer>
   <!-- // footer -->
   <!-- script -->
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- AOS Library -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- // AOS Library -->
   <script>
     // 스크롤이 가장 상단으로 올라갈 경우, navigation bar에 변화가 생김
     window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
+      var header = document.querySelector('header');
       header.classList.toggle('sticky', window.scrollY > 0);
     });
+    // 스크롤을 최상단으로 올려주는 버튼
+    window.addEventListener('click', function() {
+      var goTop = document.querySelector('.logo');
+      
+    })
+    // 새로고침 시 스크롤 최상단
+    // history.scrollRestoration = "manual"
+    // manual은 상단 고정, auto는 새로고침전 페이지 기억 후 이동
+    // 위의 코딩은 IE12 혹은 Chrome에서만 사용이 가능
+    // IE11 이하에서는 적용이 안되기 때문에 강제로 올려주는 코딩을 사용
+    window.onload = function() {
+			setTimeout (function () {
+				scrollTo(0,0);
+			},100);
+		}
     // AOS Library 초기화
     AOS.init();
   </script>
