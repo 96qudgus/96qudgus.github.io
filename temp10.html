@@ -33,13 +33,13 @@
 
   <script>
     // 스크롤 할때마다 파도의 X축 위치가 이동하게 하는 script
-    let wave1 = document.getElementById('wave1');
-    let wave2 = document.getElementById('wave2');
-    let wave3 = document.getElementById('wave3');
-    let wave4 = document.getElementById('wave4');
+    var wave1 = document.getElementById('wave1');
+    var wave2 = document.getElementById('wave2');
+    var wave3 = document.getElementById('wave3');
+    var wave4 = document.getElementById('wave4');
 
     window.addEventListener('scroll', function() {
-      let value = window.scrollY;
+      var value = window.scrollY;
 
       wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
       wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
