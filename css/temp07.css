@@ -22,6 +22,7 @@
 
 .container#blur.active {
   filter: blur(20px);
+  -webkit-filter: blur(20px);
   /* mouse event can't use */
   pointer-events: none;
   user-select: none;

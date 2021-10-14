@@ -32,7 +32,7 @@
 <body>
   <!-- header -->
   <header>
-    <a href="#" class="logo">PARK'S</a>
+    <a class="logo">PARK'S</a>
     <div class="toggle"></div>
     <nav>
       <ul>
@@ -46,7 +46,7 @@
   <!-- main -->
   <main>
     <!-- wrap01 -->
-    <section class="wrap01" id="wrap01">
+    <section class="wrap01" data-aos="fade-in" data-aos-duration="1000">
       <div class="wrap01_content">
         <h3>WELCOME!</h3>
         <br/>
@@ -288,9 +288,10 @@
       header.classList.toggle('sticky', window.scrollY > 0);
     });
     // 스크롤을 최상단으로 올려주는 버튼
-    window.addEventListener('click', function() {
-      var goTop = document.querySelector('.logo');
-      
+    var goTop = document.querySelector('.logo');
+    goTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo(0, 0);
     })
     // 새로고침 시 스크롤 최상단
     // history.scrollRestoration = "manual"
@@ -301,7 +302,7 @@
 			setTimeout (function () {
 				scrollTo(0,0);
 			},100);
-		}
+		};
     // AOS Library 초기화
     AOS.init();
   </script>

@@ -61,6 +61,7 @@ header .logo {
   font-weight: bold;
   z-index: 1;
   transition: 0.9s;
+  cursor: pointer;
 }
 
 header.sticky .logo {
@@ -68,13 +69,11 @@ header.sticky .logo {
 }
 
 header nav ul {
-  width: 400px;
+  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 1;
-  transition: 1.5s;
-  transform: translateX(0px);
 }
 
 header nav ul li a {
@@ -99,15 +98,14 @@ header nav ul li a:hover {
 /* main */
 /* wrap01 */
 main .wrap01 {
-  margin-top: 50vh;
-  height: 100%;
+  margin-top: 30vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 main .wrap01 .wrap01_content {
-  width: 50%;
+  width: 33%;
   letter-spacing: 5px;
   font-weight: 800;
 }
@@ -124,10 +122,6 @@ main .wrap01 .wrap01_content h1 {
 main .wrap01 img {
   width: 30%;
   transform: rotate(-25deg);
-  /* position: relative;
-  bottom: 200px; */
-  /* opacity: 0.9; */
-  transition: 1s;
 }
 /* // warp01 */
 /* wrap02 */
@@ -181,7 +175,7 @@ main .wrap03 {
   margin-top: 30vh;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -338,8 +332,7 @@ main .wrap05 .wrap05_content {
 }
 
 main .wrap05 .wrap05_content .skill {
-  width: 30%;
-  height: 250px;
+  width: calc(30% - 0.01px);
   margin: calc(10%/6);
   cursor: pointer;
 }

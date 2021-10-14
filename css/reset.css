@@ -11,3 +11,7 @@
 a, a:active, a:visited {
   color: #252525;
 }
+
+body {
+  overflow-x: scroll;
+}
