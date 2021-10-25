@@ -37,8 +37,8 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Skill</a></li>
-        <li><a href="#">Website</a></li>
+        <li><a href="#" data-move-btn="skill">Skill</a></li>
+        <li><a href="#" data-move-btn="website">Website</a></li>
       </ul>
     </nav>
   </header>
@@ -89,7 +89,7 @@
     </section>
     <!-- // wrap02 -->
     <!-- wrap03 -->
-    <section class="wrap03">
+    <section class="wrap03" data-move="skill">
       <img src="/img/index_img/night_work.jpg" alt="night_work" class="img_shadow" data-aos="fade-right" data-aos-duration="1000">
       <div class="wrap03_content" data-aos="fade-left" data-aos-duration="2000">
         <h2>PARK'S SKILL</h2>
@@ -118,7 +118,7 @@
     </section>
     <!-- // wrap03 -->
     <!-- wrap04 -->
-    <section class="wrap04">
+    <section class="wrap04" data-move="website">
       <h2>대표 웹사이트</h2>
       <div class="wrap04_content" data-aos="fade-in" data-aos-duration="2000">
         <div class="main_site">
@@ -296,15 +296,17 @@
     goTop.addEventListener('click', function(e) {
       e.preventDefault();
       window.scrollTo(0, 0);
-    })
+    });
     // 새로고침 시 스크롤 최상단
     // history.scrollRestoration = "manual"
     // manual은 상단 고정, auto는 새로고침전 페이지 기억 후 이동
     // 위의 코딩은 IE12 혹은 Chrome에서만 사용이 가능
     // IE11 이하에서는 적용이 안되기 때문에 강제로 올려주는 코딩을 사용
+
     // window.onload = function() {
 		// 	setTimeout (function () { scrollTo(0,0); },100);
 		// };
+
     // AOS Library 초기화
     AOS.init();
     // jQuery
@@ -323,8 +325,19 @@
         $('[data-popup="' + targeted_popup_class + '"]').fadeOut(1000);  
       });
       // // popup
+      // moveto section
+      $('[data-move-btn]').on('click', function(e) {
+        e.preventDefault();
+        // data-move-btn 속성의 값을 가져옴
+        var targeted_move_class = jQuery(this).attr('data-move-btn');
+        // 위에 가져온 값이랑 일지하는 data-move 속성의 값을 찾음
+        // 찾은 다음, offset을 이용해 좌표를 찾음
+        var offset = $('[data-move="' + targeted_move_class + '"]').offset();
+        // 해당 좌표로 이동
+        $('html, body').animate({ scrollTop: offset.top - 50 }, 100);
+      });
+      // /// moveto section
     });
-
   </script>
   <!-- // script -->
 </body>
