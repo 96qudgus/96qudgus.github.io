@@ -98,7 +98,11 @@ header nav ul li a:hover {
 /* // header */
 /* main */
 /* wrap01 */
-main {
+/* main {
+  overflow-x: hidden;
+} */
+
+body {
   overflow-x: hidden;
 }
 
@@ -381,6 +385,68 @@ main .wrap05 .wrap05_content .skill:hover p {
 /* // wrap05 */
 
 /* // main */
+/* popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 2;
+}
+
+.popup .popup_inner {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #ccc;
+  z-index: 4;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.popup img {
+  width: 30%;
+  height: 300px;
+  object-fit: fill;
+}
+
+.popup .popup_content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 10px;
+}
+
+.popup .popup_btn {
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+}
+
+.popup .popup_btn button {
+  margin: 0 30px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.8);
+}
+/* // popup */
 /* footer */
 footer {
   margin-top: 15vh;
