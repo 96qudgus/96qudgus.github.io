@@ -4,6 +4,7 @@
 .blue { color: #03a4ed; }
 .red { color: #fe3f40; }
 p { font-size: 14px; color: #666; }
+h1 { font-size: 50px; }
 h2 { font-size: 30px; }
 h3 { font-size: 20px; }
 .img_shadow {
@@ -38,30 +39,31 @@ button:hover {
 header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100px;
-  padding: 0 10%;
+  padding: 0 10vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  transition: 0.9s;
+  transition: 1s;
   background-color: #7ad5ff;
 }
 
 header.sticky {
   background-color: rgba(255, 255, 255, 0.3);
+  width: 80vw;
+  left: 10vw;
+  border: 1px solid #7ad5ff;
+  border-radius: 20px;
 }
 
 header .logo {
-  position: relative;
-  top: 0;
-  left: 0;
   color: #fff;
   font-size: 30px;
   font-weight: bold;
   z-index: 1;
-  transition: 0.9s;
+  transition: 1s;
   cursor: pointer;
 }
 
@@ -89,17 +91,19 @@ header nav ul li a:active, header nav ul li a:visited {
 }
 
 header.sticky nav ul li a {
+  font-size: 20px;
   color: #252525;
 }
 
 header nav ul li a:hover {
+  font-size: 20px;
   color: #fe3f40;
 }
 /* // header */
 /* main */
 /* section top margin */
 main > section {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin-top: 30vh;
   padding: 0 100px;
@@ -119,16 +123,12 @@ main .wrap01 .wrap01_content {
 }
 
 main .wrap01 .wrap01_content h3 {
-  font-size: 18px;
   color: #fe3f40;
 }
 
-main .wrap01 .wrap01_content h1 {
-  font-size: 50px;
-}
-
 main .wrap01 img {
-  width: 450px;
+  max-width: 450px;
+  width: 33vw;
   transform: rotate(-25deg);
 }
 /* // warp01 */
@@ -146,6 +146,7 @@ main .wrap02 {
 }
 
 main .wrap02 img {
+  max-width: 400px;
   width: 40%;
 }
 
@@ -185,7 +186,8 @@ main .wrap03 {
 }
 
 main .wrap03 img {
-  width: 500px;
+  max-width: 500px;
+  width: 40%;
 }
 
 main .wrap03 .wrap03_content {
@@ -258,6 +260,7 @@ main .wrap04 .wrap04_content .main_site {
 }
 
 main .wrap04 .wrap04_content .main_site img {
+  max-width: 400px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -278,11 +281,13 @@ main .wrap04 .wrap04_content .main_site .main_content {
 }
 
 main .wrap04 .wrap04_content .sub_site {
+  max-width: 500px;
+  width: 100%;
   height: 600px;
 }
 
 main .wrap04 .wrap04_content .sub_site .site_card {
-  width: 600px;
+  max-width: 1000px;
   height: 180px;
   padding: 20px;
   margin-bottom: 10px;
@@ -303,7 +308,8 @@ main .wrap04 .wrap04_content .sub_site .site_card button {
 }
 
 main .wrap04 .wrap04_content .sub_site .site_card img {
-  width: 250px;
+  max-width: 250px;
+  width: 30%;
   height: 180px;
   object-fit: cover;
   position: absolute;
