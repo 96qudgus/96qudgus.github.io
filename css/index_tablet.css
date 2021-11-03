@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+.pc_only { display: none; }
 p { font-size: 0.9722vw; color: #666; }
 h1 { font-size: 3.4722vw; }
 h2 { font-size: 2.0833vw; }
@@ -26,6 +27,7 @@ header {
 
 header.sticky {
   width: 100vw;
+  top: 0;
   left: 0;
   border: none;
   border-radius: 0;
@@ -90,4 +92,205 @@ main .wrap01 .wrap01_content {
   letter-spacing: 0.3472vw;
 }
 /* // warp01 */
+/* wrap02 */
+main .wrap02 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #7ad5ff;
+}
+
+main .wrap02 {
+  display: flex;
+  flex-direction: column;
+}
+
+main .wrap02 .wrap02_content {
+  width: 100vw;
+  height: 100%;
+}
+
+main .wrap02 .wrap02_content .intro {
+  width: 40%;
+  margin: 20px;
+}
+
+main .wrap02 .wrap02_content .intro h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+main .wrap02 .wrap02_content .intro ul li {
+  font-size: 0.9722vw;
+  line-height: 1.7361vw;
+  position: relative;
+  left: 0.9722vw;
+}
+/* // wrap02 */
+/* wrap03 */
+main .wrap03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .wrap03 .wrap03_content {
+  width: auto;
+}
+
+main .wrap03 .wrap03_content p {
+  margin: 1.0417vw 0;
+}
+
+main .wrap03 .wrap03_content ul li {
+  width: 27.7778vw;
+  height: 3.4722vw;
+  padding: 0.6944vw 0;
+  margin: 0.6944vw 0;
+  position: relative;
+}
+
+main .wrap03 .wrap03_content  ul li span {
+  position: absolute;
+  top: 0.5417vw;
+  right: 0;
+  font-weight: 800;
+}
+
+main .wrap03 .wrap03_content  ul li .full_bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.6944vw;
+  background-color: #b4e4fa;
+  border-radius: 0.6944vw;
+}
+
+main .wrap03 .wrap03_content  ul li .sub_bar {
+  width: 0%;
+  height: 0.6944vw;
+  position: absolute;
+  bottom: 0;
+  background-color: #fe3f40;
+  border-radius: 0.6944vw;
+}
+
+main .wrap03 .wrap03_content  ul li .html_bar {
+  width: 90%;
+}
+
+main .wrap03 .wrap03_content  ul li .css_bar {
+  width: 90%;
+}
+
+main .wrap03 .wrap03_content  ul li .js_bar {
+  width: 80%;
+}
+/* // wrap03 */
+/* wrap04 */
+main .wrap04 .wrap04_content {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .wrap04 .wrap04_content .main_site {
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+main .wrap04 .wrap04_content .main_site img {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+
+main .wrap04 .wrap04_content .main_site .main_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: none;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+main .wrap04 .wrap04_content .main_site button {
+  position: absolute;
+  left: 40%;
+  bottom: 6.4722vw;
+  z-index: 2;
+}
+
+main .wrap04 .wrap04_content .sub_site {
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+main .wrap04 .wrap04_content .sub_site .site_card {
+  max-width: 1000px;
+  width: 66%;
+  height: 180px;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+  left: 34%;
+  border-radius: 20px;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+main .wrap04 .wrap04_content .sub_site .site_card p {
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+main .wrap04 .wrap04_content .sub_site .site_card img {
+  max-width: 250px;
+  width: 50%;
+  height: 180px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: -51%;
+  border-radius: 20px;
+}
+/* // wrap04 */
+/* wrap05 */
+main .wrap05 .wrap05_content .skill {
+  width: 40%;
+  margin: 3% 5%;
+  border-radius: 1.3889vw;
+}
+
+main .wrap05 .wrap05_content .skill .imgBx {
+  width: 100%;
+  height: 13.8889vw;
+  max-height: 200px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1.3889vw;
+  transition: 0.5s;
+}
+
+main .wrap05 .wrap05_content .skill h3 {
+  padding: 0.6944vw;
+  transition: 0.5s;
+}
+
+main .wrap05 .wrap05_content .skill p {
+  padding: 0.3472vw 0.6944vw;
+  transition: 0.5s;
+}
+/* // wrap05 */
 /* // main */

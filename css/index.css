@@ -53,6 +53,7 @@ header {
 header.sticky {
   background-color: rgba(255, 255, 255, 0.3);
   width: 80vw;
+  top: 10px;
   left: 10vw;
   border: 1px solid #7ad5ff;
   border-radius: 20px;
