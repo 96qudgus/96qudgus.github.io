@@ -418,7 +418,7 @@
   <script>
     // navigation scroll event
     // 최신 브라우저에서 Y좌표를 가져올때는 scrollY를 쓰면 되지만,
-    // IE에서는 scrollY가 작동되지 않기때문에 pageYoffset을 사욯해야 한다.
+    // IE에서는 scrollY가 작동되지 않기때문에 pageYoffset을 사용해야 한다.
     window.addEventListener('scroll', function() {
       var header = document.querySelector('header'); 
       if (window.pageYOffset != 0) {
@@ -434,7 +434,7 @@
       window.scrollTo(0, 0);
     });
     // 새로고침 시 스크롤 최상단
-    // history.scrollRestoration = "manual"
+    // history.scrollRestoration = "manual";
     // manual은 상단 고정, auto는 새로고침전 페이지 기억 후 이동
     // 위의 코딩은 IE12 혹은 Chrome에서만 사용이 가능
     // IE11 이하에서는 적용이 안되기 때문에 강제로 올려주는 코딩을 사용
