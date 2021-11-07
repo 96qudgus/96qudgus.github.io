@@ -16,12 +16,14 @@ button {
   font-size: 1.0417vw;
   border-radius: 2.0833vw;
 }
-
+.off { visibility: hidden; opacity: 0; }
+.on { visibility: visible; opacity: 1;}
+.hide { display: none; }
+.no_hide { display: block; }
 /* header */
 header {
   position: fixed;
-  height: 10vw;
-  justify-content: none;
+  height: 80px;
   align-items: center;
 }
 
@@ -34,22 +36,31 @@ header.sticky {
 }
 
 header .logo {
-  font-size: 2.0833vw;
+  font-size: 30px;
   margin: auto;
 }
 
 header nav ul {
   background-color: #7ad5ff;
-  width: 20.8333vw;
-  height: 20.8333vw;
+  width: 50.8333vw;
+  height: 50.8333vw;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 10.5833vw;
-  right: 2.5833vw;
+  top: 90px;
+  right: 5%;
   border: 1px solid #fff;
   border-radius: 1.3889vw;
   transition: 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header nav ul li {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 header.sticky nav ul {
@@ -57,18 +68,42 @@ header.sticky nav ul {
 }
 
 header nav ul li a {
-  font-size: 1.3889vw;  
+  font-size: 3.3889vw;  
   letter-spacing: 0.1389vw;
+  line-height: 15vw;
 }
 
 header.sticky nav ul li a {
-  font-size: 1.3889vw;
+  font-size: 3.3889vw;
   color: #fff;
 }
 
-header nav ul li a:hover {
-  font-size: 1.3889vw;
+header nav ul li:hover a {
+  font-size: 3.3889vw;
   color: #fe3f40;
+}
+
+header .toggle {
+  width: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 1;
+}
+
+header .toggle.toggle_off {
+  display: block;
+}
+
+header .toggle.toggle_on {
+  display: none;
+}
+
+header.sticky .toggle {
+  color: #7ad5ff;
 }
 
 /* // header */
@@ -234,7 +269,6 @@ main .wrap04 .wrap04_content .main_site button {
 main .wrap04 .wrap04_content .sub_site {
   max-width: 700px;
   width: 100%;
-  height: 50.7222vw;
   position: relative;
 }
 
@@ -293,4 +327,9 @@ main .wrap05 .wrap05_content .skill p {
   transition: 0.5s;
 }
 /* // wrap05 */
+/* popup */
+.popup img {
+  margin-right: 6.9444vw;
+}
+/* // popup */
 /* // main */

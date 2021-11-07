@@ -33,12 +33,13 @@
   <!-- header -->
   <header>
     <a class="logo">PARK'S</a>
-    <div class="toggle"></div>
-    <nav>
+    <div class="toggle toggle_off"><i class="fas fa-bars"></i></div>
+    <div class="toggle toggle_on"><i class="fas fa-times"></i>  </div>
+    <nav class="menu">
       <ul>
-        <li><a href="#" data-move-btn="introduce">소개</a></li>
-        <li><a href="#" data-move-btn="website">사이트</a></li>
-        <li><a href="#" data-move-btn="skill">기술</a></li>
+        <li data-move-btn="introduce"><a href="#">소개</a></li>
+        <li data-move-btn="website"><a href="#">사이트</a></li>
+        <li data-move-btn="skill"><a href="#">기술</a></li>
       </ul>
     </nav>
   </header>
@@ -279,15 +280,15 @@
         <!-- content -->
         <div class="popup_content">
           <div class="inner01">
-            <h3>홈페이지 이름</h3>
-            <p>또바기</p>
+            <h3>프로젝트명</h3>
+            <p>또바기의류쇼핑몰</p>
           </div>
           <div class="inner02">
-            <h3>제작 페이지</h3>
+            <h3>제작 참여</h3>
             <p>랭킹, 상세페이지, 입고지연상품, 나의 리뷰 보기, about</p>
           </div>
           <div class="inner03">
-            <h3>홈페이지 특징</h3>
+            <h3>프로젝트 특징</h3>
             <ul>
               <li>1. 의류판매쇼핑몰</li>
               <li>2. 랭킹, 상세페이지, 나의 리뷰, 입고지연상품</li>
@@ -311,19 +312,19 @@
         <!-- content -->
         <div class="popup_content">
           <div class="inner01">
-            <h3>홈페이지 이름</h3>
-            <p>또바기</p>
+            <h3>프로젝트명</h3>
+            <p>삼성전자 글로벌 사이트</p>
           </div>
           <div class="inner02">
-            <h3>제작 페이지</h3>
-            <p>랭킹, 상세페이지, 입고지연상품, 나의 리뷰 보기, about</p>
+            <h3>제작 참여</h3>
+            <p>Product List, Product Showcase</p>
           </div>
           <div class="inner03">
-            <h3>홈페이지 특징</h3>
+            <h3>프로젝트 특징</h3>
             <ul>
-              <li>1. 의류판매쇼핑몰</li>
-              <li>2. 랭킹, 상세페이지, 나의 리뷰, 입고지연상품</li>
-              <li>3. Galaxy S5 기준으로 모바일버전 제작</li>
+              <li>1. 삼성전자 글로벌 사이트</li>
+              <li>2. 다양한 국가와 의사소통하며 제작, 수정</li>
+              <li>3. AEM 프로그램 사용</li>
             </ul>
           </div>
         </div>
@@ -343,19 +344,18 @@
         <!-- content -->
         <div class="popup_content">
           <div class="inner01">
-            <h3>홈페이지 이름</h3>
-            <p>또바기</p>
+            <h3>프로젝트명</h3>
+            <p>코인포가상화폐거래소</p>
           </div>
           <div class="inner02">
-            <h3>제작 페이지</h3>
-            <p>랭킹, 상세페이지, 입고지연상품, 나의 리뷰 보기, about</p>
+            <h3>제작 참여</h3>
+            <p>이벤트리스트, 게시글 상세페이지, 게시글리스트</p>
           </div>
           <div class="inner03">
-            <h3>홈페이지 특징</h3>
+            <h3>프로젝트 특징</h3>
             <ul>
-              <li>1. 의류판매쇼핑몰</li>
-              <li>2. 랭킹, 상세페이지, 나의 리뷰, 입고지연상품</li>
-              <li>3. Galaxy S5 기준으로 모바일버전 제작</li>
+              <li>1. 가상화폐거래소</li>
+              <li>2. 모바일페이지 제작</li>
             </ul>
           </div>
         </div>
@@ -375,19 +375,18 @@
         <!-- content -->
         <div class="popup_content">
           <div class="inner01">
-            <h3>홈페이지 이름</h3>
-            <p>또바기</p>
+            <h3>프로젝트명</h3>
+            <p>안랩SMP</p>
           </div>
           <div class="inner02">
-            <h3>제작 페이지</h3>
-            <p>랭킹, 상세페이지, 입고지연상품, 나의 리뷰 보기, about</p>
+            <h3>제작 참여</h3>
+            <p>전체적인 페이지의 유지, 보수</p>
           </div>
           <div class="inner03">
-            <h3>홈페이지 특징</h3>
+            <h3>프로젝트 특징</h3>
             <ul>
-              <li>1. 의류판매쇼핑몰</li>
-              <li>2. 랭킹, 상세페이지, 나의 리뷰, 입고지연상품</li>
-              <li>3. Galaxy S5 기준으로 모바일버전 제작</li>
+              <li>1. 소프트웨어 보안프로그램 사이트</li>
+              <li>2. 유지, 보수를 주로 담당</li>
             </ul>
           </div>
         </div>
@@ -447,15 +446,39 @@
     AOS.init();
     // jQuery
     $(function() {
+      // toggle
+        // 해상도가 1024px 미만일 경우, toggle이 생성
+        // 1024px 이상일 경우, toggle 삭제
+      $(window).on('resize', function(e) {
+        var winW01 = $(window).width();
+        console.log(winW01);
+        e.preventDefault();
+        if (winW01 >= 1024) {
+          $('.toggle.toggle_off').css('display', 'none');
+          $('.toggle.toggle_on').css('display', 'none');
+          $('header nav ul').css({
+            'visibility': 'visible',
+            'opacity': 1
+          });
+        } else {
+          $('.toggle.toggle_off').css('display', 'block');
+          $('.toggle.toggle_on').css('display', 'none');
+          $('header nav ul').css({
+            'visibility': 'hidden',
+            'opacity': 0
+          });
+        };
+      });
+      // // toggle
       // popup 
-      // popup OPEN
+        // popup OPEN
       $('[data-popup-open]').on('click', function(e) {
         e.preventDefault();
         var targeted_popup_class = jQuery(this).attr('data-popup-open');
         $('[data-popup="' + targeted_popup_class + '"]').fadeIn(1000);
         $('html, body').css({'overflow': 'hidden'});
       });
-      // popup CLOSE
+        // popup CLOSE
       $('[data-popup-close]').on('click', function(e) {
         e.preventDefault();
         var targeted_popup_class = jQuery(this).attr('data-popup-close');
@@ -473,6 +496,16 @@
         var offset = $('[data-move="' + targeted_move_class + '"]').offset();
         // 해당 좌표로 이동
         $('html').animate({ scrollTop: offset.top - 50 }, 100);
+        // 해상도가 1024px 미만인 경우, toggle과 menu에 이벤트 발생
+        var winW02 = $(window).width();
+        if (winW02 < 1024) {
+          $('.toggle.toggle_off').css('display', 'block');
+          $('.toggle.toggle_on').css('display', 'none');
+          $('header nav ul').css({
+            'visibility': 'hidden',
+            'opacity': 0
+          });
+        };
       });
       // // moveto section
       // go page
@@ -483,6 +516,28 @@
         window.open(targeted_page_class);
       });
       // // go page
+      // menu on and off
+        // toggle_Off click event
+      $('.toggle.toggle_off').on('click', function(e) {
+        e.preventDefault();
+        $('.toggle.toggle_on').css('display', 'block');
+        $('.toggle.toggle_off').css('display', 'none');
+        $('header nav ul').css({
+          'visibility': 'visible',
+          'opacity': 1
+        });
+      });
+        // toggle_on click event
+      $('.toggle.toggle_on').on('click', function(e) {
+        e.preventDefault(); 
+        $('.toggle.toggle_off').css('display', 'block');
+        $('.toggle.toggle_on').css('display', 'none');
+        $('header nav ul').css({
+          'visibility': 'hidden',
+          'opacity': 0
+        });
+      });
+      // // menu on and off
     });
   </script>
   <!-- // script -->

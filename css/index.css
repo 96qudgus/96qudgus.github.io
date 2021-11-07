@@ -100,6 +100,10 @@ header nav ul li a:hover {
   font-size: 20px;
   color: #fe3f40;
 }
+
+header .toggle {
+  display: none;
+}
 /* // header */
 /* main */
 /* section top margin */
@@ -397,7 +401,7 @@ main .wrap05 .wrap05_content .skill:hover p {
 
 .popup .popup_inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   width: 80%;
   height: 80%;
@@ -414,7 +418,9 @@ main .wrap05 .wrap05_content .skill:hover p {
 
 .popup img {
   width: 30%;
+  max-width: 300px;
   height: 300px;
+  margin-right: 100px;
   object-fit: cover;
 }
 
@@ -433,7 +439,7 @@ main .wrap05 .wrap05_content .skill:hover p {
 }
 
 .popup .popup_btn button {
-  margin: 0 30px;
+  margin: 0 2.0833vw;
 }
 
 .popup .close {
