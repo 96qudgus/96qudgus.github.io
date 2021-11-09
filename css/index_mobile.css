@@ -1,4 +1,15 @@
 @charset 'utf-8';
+
+p { font-size: 2.4722vw; }
+h3 { font-size: 3.8889vw;}
+
+button {
+  width: 50%;
+  height: 30%;
+  font-size: 3.0417vw;
+  border-radius: 3.0833vw;
+}
+
 /* header */
 header {
   position: fixed;
@@ -43,16 +54,42 @@ main .wrap02 .wrap02_content {
   justify-content: space-around;
   align-content: center;
 }
+
+main .wrap02 .wrap02_content .intro ul li {
+  font-size: 2.9722vw;
+  line-height: 4.5972vw;
+  position: relative;
+  left: 0.9722vw;
+}
 /* // wrap02 */
+/* wrap03 */
+main .wrap03 .wrap03_content ul li h3 {
+  font-size: 2.8889vw;
+}
+/* // wrap03 */
 /* wrap04 */
 main .wrap04 .wrap04_content .sub_site .site_card {
   box-shadow: none;
+  padding: 1.3889vw;
+}
+
+main .wrap04 .wrap04_content .main_site .main_content h3 {
+  font-size: 6.0722vw;
+}
+
+main .wrap04 .wrap04_content .main_site .main_content p {
+  font-size: 3.9722vw;
+  margin-top: 5%;
+}
+
+main .wrap04 .wrap04_content .sub_site .site_card button {
+  position: absolute;
+  bottom: 0;
 }
 /* // wrap04 */
 /* wrap05 */
 main .wrap05 .wrap05_content .skill {
   width: 90%;
-  margin: 3% 5%;
   border-radius: 1.3889vw;
 }
 

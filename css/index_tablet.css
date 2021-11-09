@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 .pc_only { display: none; }
-p { font-size: 2.4722vw; color: #666; }
+p { font-size: 1.9722vw; color: #666; }
 h1 { font-size: 5.4722vw; }
 h2 { font-size: 3.5833vw; }
 h3 { font-size: 2.8889vw; }
@@ -11,9 +11,9 @@ h3 { font-size: 2.8889vw; }
   box-shadow: 0.6944vw 0.6944vw 1.3889vw #666;
 }
 button {
-  width: 10.4167vw;
-  height: 3.4722vw;
-  font-size: 1.0417vw;
+  width: 33%;
+  height: 30%;
+  font-size: 2.0417vw;
   border-radius: 2.0833vw;
 }
 .off { visibility: hidden; opacity: 0; }
@@ -142,6 +142,7 @@ main .wrap02 {
 main .wrap02 .wrap02_content {
   width: 100vw;
   height: 100%;
+  margin-top: 5%;
 }
 
 main .wrap02 .wrap02_content .intro {
@@ -155,8 +156,8 @@ main .wrap02 .wrap02_content .intro h3 {
 }
 
 main .wrap02 .wrap02_content .intro ul li {
-  font-size: 0.9722vw;
-  line-height: 20px;
+  font-size: 1.9722vw;
+  line-height: 3.5972vw;
   position: relative;
   left: 0.9722vw;
 }
@@ -169,22 +170,27 @@ main .wrap03 {
 }
 
 main .wrap03 .wrap03_content {
-  width: auto;
+  width: 80%;
 }
 
 main .wrap03 .wrap03_content p {
   margin: 1.0417vw 0;
 }
 
+main .wrap03 .wrap03_content ul {
+  margin-top: 5vw;
+}
+
 main .wrap03 .wrap03_content ul li {
-  width: 27.7778vw;
-  height: 3.4722vw;
+  width: 100%;
+  height: 6vw;
   padding: 0.6944vw 0;
-  margin: 0.6944vw 0;
+  margin: 2.6944vw  0;
   position: relative;
 }
 
 main .wrap03 .wrap03_content  ul li span {
+  font-size: 2.8889vw;
   position: absolute;
   top: 0.5417vw;
   right: 0;
@@ -259,9 +265,20 @@ main .wrap04 .wrap04_content .main_site .main_content {
   opacity: 0.7;
 }
 
+main .wrap04 .wrap04_content .main_site .main_content h3 {
+  font-size: 4.5722vw;
+}
+
+main .wrap04 .wrap04_content .main_site .main_content p {
+  font-size: 2.4722vw;
+  margin-top: 5%;
+}
+
 main .wrap04 .wrap04_content .main_site button {
   position: absolute;
-  left: 40%;
+  left: 30%;
+  width: 40%;
+  height: 15%;
   bottom: 6.4722vw;
   z-index: 2;
 }
@@ -275,8 +292,8 @@ main .wrap04 .wrap04_content .sub_site {
 main .wrap04 .wrap04_content .sub_site .site_card {
   max-width: 1000px;
   width: 66%;
-  height: 180px;
-  padding: 20px;
+  height: 33%;
+  padding: 1.3889vw;
   margin-top: 10px;
   position: relative;
   left: 34%;
@@ -292,18 +309,24 @@ main .wrap04 .wrap04_content .sub_site .site_card p {
 main .wrap04 .wrap04_content .sub_site .site_card img {
   max-width: 250px;
   width: 50%;
-  height: 180px;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: -51%;
   border-radius: 20px;
 }
+
+main .wrap04 .wrap04_content .sub_site .site_card button {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
 /* // wrap04 */
 /* wrap05 */
 main .wrap05 .wrap05_content .skill {
   width: 40%;
-  margin: 3% 5%;
+  margin: 5%;
   border-radius: 1.3889vw;
 }
 
