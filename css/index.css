@@ -146,13 +146,14 @@ main .wrap02 {
 
 main .wrap02 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 main .wrap02 img {
   max-width: 400px;
   width: 40%;
+  margin-right: 10vw;
 }
 
 main .wrap02 .wrap02_content {
@@ -186,13 +187,14 @@ main .wrap02 .wrap02_content .intro ul li {
 /* wrap03 */
 main .wrap03 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 main .wrap03 img {
   max-width: 500px;
   width: 40%;
+  margin-right: 10vw;
 }
 
 main .wrap03 .wrap03_content {
@@ -256,12 +258,13 @@ main .wrap04 h2 {
 main .wrap04 .wrap04_content {
   margin-top: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 main .wrap04 .wrap04_content .main_site {
   width: 30%;
   height: 400px;
+  margin-right: 10vw;
 }
 
 main .wrap04 .wrap04_content .main_site img {
