@@ -290,9 +290,10 @@
           <div class="inner inner03">
             <h3>프로젝트 특징</h3>
             <ul>
-              <li>1. 의류판매쇼핑몰</li>
-              <li>2. 랭킹, 상세페이지, 나의 리뷰, 입고지연상품</li>
-              <li>3. Galaxy S5 기준으로 모바일버전 제작</li>
+              <li>의류판매쇼핑몰</li>
+              <li>JAVA(Spring Framework), JSP, JS&JQERY, HTML, CSS 이용</li>
+              <li>랭킹, 상세페이지, 나의 리뷰, 입고지연상품</li>
+              <li>Galaxy S5 기준으로 모바일버전 제작</li>
             </ul>
           </div>
         </div>
@@ -322,9 +323,9 @@
           <div class="inner inner03">
             <h3>프로젝트 특징</h3>
             <ul>
-              <li>1. 삼성전자 글로벌 사이트</li>
-              <li>2. 다양한 국가와 의사소통하며 제작, 수정</li>
-              <li>3. AEM 프로그램 사용</li>
+              <li>삼성전자 글로벌 사이트</li>
+              <li><span data-page-go="https://www.adobe.io/apis/experiencecloud/aem.html">AEM(Adobe Experience Manager)</span> 이용</li>
+              <li>다양한 국가와 의사소통하며 제작, 수정</li>
             </ul>
           </div>
         </div>
@@ -354,8 +355,9 @@
           <div class="inner inner03">
             <h3>프로젝트 특징</h3>
             <ul>
-              <li>1. 가상화폐거래소</li>
-              <li>2. 모바일페이지 제작</li>
+              <li>가상화폐거래소</li>
+              <li>HTML, CSS, JS&JQUERY 이용</li>
+              <li>모바일페이지 제작</li>
             </ul>
           </div>
         </div>
@@ -385,8 +387,9 @@
           <div class="inner inner03">
             <h3>프로젝트 특징</h3>
             <ul>
-              <li>1. 소프트웨어 보안프로그램 사이트</li>
-              <li>2. 유지, 보수를 주로 담당</li>
+              <li>소프트웨어 보안프로그램 사이트</li>
+              <li>HTML, CSS, JS&JQERY 이용</li>
+              <li>유지, 보수를 주로 담당</li>
             </ul>
           </div>
         </div>
@@ -406,6 +409,12 @@
     <div class="footer_wrap">
       <p>제 홈페이지에 와주셔서 감사합니다!</p>
       <p>&copy;2021. Byeong Hyeon Park All rights Reserved.</p>
+      <p>
+        문의 : <span data-text-copy>parkbh801@naver.com</span>
+        <br/>
+        <span class="email">*이메일을 클릭해서 복사하세요!*</span>
+      </p>
+      <!-- <div data-text-copy="email">okay</div> -->
     </div>
   </footer>
   <!-- // footer -->
@@ -437,7 +446,6 @@
     // manual은 상단 고정, auto는 새로고침전 페이지 기억 후 이동
     // 위의 코딩은 IE12 혹은 Chrome에서만 사용이 가능
     // IE11 이하에서는 적용이 안되기 때문에 강제로 올려주는 코딩을 사용
-
     // window.onload = function() {
 		// 	setTimeout (function () { scrollTo(0,0); },100);
 		// };
@@ -538,6 +546,30 @@
         });
       });
       // // menu on and off
+      // text copy event
+      // element에 [data-text-copy] 속성만 넣어주면
+      // 클립보드로 복사가 가능하다.
+      $('[data-text-copy]').on('click', function(e) {
+        e.preventDefault();
+        // 클릭한 요소의 html을 가져옴
+        var targeted_text_class = $(this).html();
+        // 임시로 textarea를 생성
+        var tempInput = document.createElement('textarea');
+        // 임시 생성한 textarea를 body에 붙여줌
+        document.body.appendChild(tempInput);
+        // 생성한 textarea의 value에 html을 넣어줌
+        tempInput.value = targeted_text_class;
+        // html을 넣은 value를 select
+        tempInput.select();
+        // value를 클립보드로 복사
+        document.execCommand('copy');
+        // 임시 생성한 textarea 삭제
+        // ie에서는 remove() method를 지원하지 않는다.
+        tempInput.parentNode.removeChild(tempInput);
+        // 클립보드로 복사한 text를 알림
+        alert('[ ' + targeted_text_class + ' ] 복사했습니다!');
+      });
+      // // text copy evnet
     });
   </script>
   <!-- // script -->

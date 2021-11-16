@@ -38,6 +38,8 @@ main .wrap01 {
 
 main .wrap01 .wrap01_content {
   position: absolute;
+  bottom: 0;
+  left: 30%;
   z-index: 1;
 }
 
@@ -142,9 +144,25 @@ main .wrap05 .wrap05_content {
   justify-content: flex-start;
 }
 
+.popup .popup_inner .popup_content {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.6944vw 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
 .popup .popup_inner .popup_content .inner {
   margin-bottom: 2.4444vw;
   min-height: 80px;
+}
+
+.popup .popup_inner .inner03 ul li {
+  list-style: disc;
+  position: relative;
+  left: 3.4722vw;
 }
 
 .popup img {
@@ -159,20 +177,11 @@ main .wrap05 .wrap05_content {
   margin-right: 6.9444vw;
 }
 
-.popup .popup_content {
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 1.6944vw 0;
-  overflow: auto;
-}
-
-.popup .popup_content p {
+.popup .popup_inner .popup_content p {
   font-size: 3.4722vw;
 }
 
-.popup .popup_content ul li {
+.popup .popup_inner .popup_content ul li {
   font-size: 3.4722vw;
   color: #666;
 }
@@ -189,15 +198,5 @@ main .wrap05 .wrap05_content {
   width: 95%;
   height: 40%;
   margin: 1.0833vw 2.0833vw;
-}
-
-.popup .close {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  background: rgba(255, 255, 255, 0.8);
 }
 /* // popup */

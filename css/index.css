@@ -6,7 +6,7 @@
 p { font-size: 14px; color: #666; }
 h1 { font-size: 50px; }
 h2 { font-size: 30px; }
-h3 { font-size: 20px; }
+h3 { font-size: 23px; }
 .img_shadow {
   border: 10px solid #fff;
   border-bottom: 40px solid #fff;
@@ -17,6 +17,7 @@ button {
   width: 150px;
   height: 50px;
   font-size: 15px;
+  font-weight: bold;
   color: #fff;
   background-color: #7ad5ff;
   border: none;
@@ -419,20 +420,42 @@ main .wrap05 .wrap05_content .skill:hover p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.popup .popup_inner .popup_content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.popup .popup_inner .inner h3 {
+  font-size: 30px;
+}
+
+.popup .popup_inner .inner p {
+  font-size: 20px;
+}
+
+.popup .popup_inner .inner03 ul li {
+  color: #666;
+  font-size: 20px;
+  list-style: disc;
+  position: relative;
+  left: 20px;
+}
+
+.popup .popup_inner .inner03 ul li span {
+  color: #7ad5ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .popup img {
   width: 30%;
   max-width: 300px;
   height: 300px;
   margin-right: 100px;
   object-fit: cover;
-}
-
-.popup .popup_content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 10px;
 }
 
 .popup .popup_btn {
@@ -467,4 +490,24 @@ footer p {
   text-align: center;
   line-height: 30px;
 }
+footer .email {
+  opacity: 0.5;
+}
 /* // footer */
+/* copy text */
+[data-text-copy] {
+  cursor: pointer;
+  padding: 2px;
+  font-weight: bold;
+}
+
+[data-text-copy]:hover {
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+textarea {
+  opacity: 0;
+}
+
+/* // copy text */
