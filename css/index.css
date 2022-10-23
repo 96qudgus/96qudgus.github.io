@@ -250,6 +250,10 @@ main .wrap03 .wrap03_content  ul li .css_bar {
 main .wrap03 .wrap03_content  ul li .js_bar {
   width: 80%;
 }
+
+main .wrap03 .wrap03_content  ul li .react_bar {
+  width: 50%;
+}
 /* // wrap03 */
 /* wrap04 */
 main .wrap04 h2 {
