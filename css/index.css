@@ -270,7 +270,7 @@ main .wrap04 .wrap04_content {
 
 main .wrap04 .wrap04_content .main_site {
   max-width: 1200px;
-  width: 100vw;
+  width: 100%;
   height: 400px;
   padding: 0 100px;
   margin-right: 10vw;
@@ -303,7 +303,7 @@ main .wrap04 .wrap04_content .main_site .main_content {
 }
 
 main .wrap04 .wrap04_content .sub_site {
-  max-width: 500px;
+  max-width: 1200px;
   width: 100%;
   height: 400px;
   display: flex;
