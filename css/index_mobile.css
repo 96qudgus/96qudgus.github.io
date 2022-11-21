@@ -98,6 +98,10 @@ main .wrap04 .wrap04_content .main_site .main_content p {
   margin-top: 5%;
 }
 
+main .wrap04 .wrap04_content .sub_site {
+  height: 550px;
+}
+
 main .wrap04 .wrap04_content .sub_site .site_card button {
   position: absolute;
   bottom: 0;

@@ -263,17 +263,18 @@ main .wrap04 h2 {
 main .wrap04 .wrap04_content {
   margin-top: 10vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 main .wrap04 .wrap04_content .main_site {
-  width: 30%;
+  width: 100vw;
   height: 400px;
   margin-right: 10vw;
+  margin-bottom: 1vw;
 }
 
 main .wrap04 .wrap04_content .main_site img {
-  max-width: 400px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -281,32 +282,48 @@ main .wrap04 .wrap04_content .main_site img {
   opacity: 0.7;
 }
 
+main .wrap04 .wrap04_content .main_site p {
+  margin: 10px 0;
+  line-height: 20px;
+}
+
 main .wrap04 .wrap04_content .main_site .main_content {
   position: relative;
-  left: 10px;
-  bottom: 30px;
+  left: 20px;
+  bottom: 170px;
   background-color: #fff;
-  width: 80%;
-  height: 100px;
+  width: 95%;
+  height: 160px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #eee;
+  /* box-shadow: 5px 5px 10px #eee; */
 }
 
 main .wrap04 .wrap04_content .sub_site {
   max-width: 500px;
   width: 100%;
   height: 600px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main .wrap04 .wrap04_content .sub_site .site_card {
-  max-width: 1000px;
+  /* max-width: 1000px; */
+  width: 46%;
   height: 180px;
   padding: 20px;
   margin-bottom: 10px;
   position: relative;
   border-radius: 20px;
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+main .wrap04 .wrap04_content .sub_site .site_card:nth-child(2n-1) {
+  margin-right: 2%;
+}
+
+main .wrap04 .wrap04_content .sub_site .site_card:nth-child(2n) {
+  margin-left: 2%;
 }
 
 main .wrap04 .wrap04_content .sub_site .site_card p {
