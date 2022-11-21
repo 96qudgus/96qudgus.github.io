@@ -470,7 +470,6 @@
         // 1024px 이상일 경우, toggle 삭제
       $(window).on('resize', function(e) {
         var winW01 = $(window).width();
-        console.log(winW01);
         e.preventDefault();
         if (winW01 >= 1024) {
           $('.toggle.toggle_off').css('display', 'none');

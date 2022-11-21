@@ -261,6 +261,7 @@ main .wrap04 h2 {
 }
 
 main .wrap04 .wrap04_content {
+  margin: auto;
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
@@ -268,10 +269,12 @@ main .wrap04 .wrap04_content {
 }
 
 main .wrap04 .wrap04_content .main_site {
+  max-width: 1200px;
   width: 100vw;
   height: 400px;
+  padding: 0 100px;
   margin-right: 10vw;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
 }
 
 main .wrap04 .wrap04_content .main_site img {
