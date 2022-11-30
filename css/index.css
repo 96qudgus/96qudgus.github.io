@@ -329,6 +329,10 @@ main .wrap04 .wrap04_content .sub_site .site_card:nth-child(2n) {
   margin-left: 2%;
 }
 
+main .wrap04 .wrap04_content .sub_site .site_card img.logo {
+  object-fit: contain;
+}
+
 main .wrap04 .wrap04_content .sub_site .site_card p {
   margin-top: 10px;
   line-height: 20px;
