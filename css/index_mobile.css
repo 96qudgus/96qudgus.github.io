@@ -99,7 +99,11 @@ main .wrap04 .wrap04_content .main_site .main_content p {
 }
 
 main .wrap04 .wrap04_content .sub_site {
-  height: 550px;
+  /* height: 550px; */
+}
+
+main .wrap04 .wrap04_content .sub_site .site_card {
+  height: 30vw;
 }
 
 main .wrap04 .wrap04_content .sub_site .site_card:nth-child(2n-1) {
